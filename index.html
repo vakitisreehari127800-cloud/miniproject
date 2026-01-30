@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Expense Tracker</title>
+    <style>
+     body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e2dfdf;
+        }
+        .header{
+            background-color:rgb(83, 195, 126);
+            text-align: center;
+            padding: 10px;
+            border-radius: 15px;
+            margin:10px;
+        }
+        .summary{
+          display:flex;
+          justify-content:space-between;
+          margin: 20px;
+          gap:30px;
+        }
+        .card{
+            background-color: rgb(186, 210, 227);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .card:hover{
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            cursor:pointer
+        }
+        .expense-categories{
+            background-color: rgb(186, 210, 227);
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .expense-categories:hover{
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            transform: translateY(-3px);
+            transition: all 0.5s ease;
+            cursor:pointer;
+    
+        }
+        .expense-categories h2{
+            text-align: center;
+            margin-bottom: 15px;
+            color:rgb(10, 9, 9);
+            
+        }
+        .expenses{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px ;
+            border-bottom: 1px solid #ccc;
+            margin:10px;
+           border-radius:10px;
+           border: 1px solid black;
+        }
+        .expenses:hover{
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            transform: translateY(-3px);
+            transition: all 0.5s ease;
+            cursor:pointer;
+            background-color:aqua
+        }
+        .recent-transactions{
+                       background-color: rgb(186, 210, 227);
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+         }        
+        .recent-transactions:hover{
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            transform: translateY(-3px);
+            transition: all 0.5s ease;
+            cursor:pointer;
+
+        }
+        .recent-transactions h2{
+            text-align: center;
+            margin-bottom: 15px;
+            color:rgb(10, 9, 9);
+        }
+        .transaction-card{
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            margin:10px;
+            gap:10px;
+            border: 1px solid black;
+            border-radius:10px;
+            background-color: rgb(186, 210, 227);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .transaction-card:hover{
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            transform: translateY(-3px);
+            transition: all 0.5s ease;
+            cursor:pointer;
+            background-color:aqua;
+        }
+        .sp{
+            font-weight:bold;
+            margin-top:10px;
+            gap:10px;
+        }
+        em{
+            font-size:12px;
+        }
+  </style>
+  
+</head>
+<body>
+     <!-- header section  -->
+    <header class="header">
+        <h1> Personal Expense Tracker</h1>
+        <p>track your monthly spending</p>
+    </header> 
+    <main>
+         <!-- summary cards -->
+        <div class="summary">
+            <div class="card">
+                <h2 style="color:blue;">Total spent</h2>
+                <p>₹21500</p>
+            </div>
+            <div class="card">
+                <h2 style="color:blue;">Highest Category</h2>
+                <p>Food - ₹10000</p>
+            </div>
+            <div class="card">
+                <h2 style="color:blue;">Current Month</h2>
+                <p>January 2026</p>
+            </div>
+        </div>
+
+        <!-- expense categories -->
+        <div class="expense-categories">
+            <h2  style="color:blue;" >expense categories</h2>
+            <div class="expenses">
+                <span>Food</span>
+                <span>₹10000</span>
+            </div>
+            <div class="expenses">
+                <span>Transport</span>
+                <span>₹5000</span>
+            </div>
+            <div class="expenses">
+                <span>Shopping</span>
+                <span>₹4500</span>
+            </div>
+            <div class="expenses">
+                <span>Entertainment</span>
+                <span>₹2000</span>
+            </div>
+        </div>
+        <!-- recent transactions -->
+        <div class="recent-transactions">
+            <h2 style="color:blue;">recent transactions</h2>
+            <div class="transaction-card">
+                <span class="sp">Grocery Store</span> <br>
+           
+                <em>20-01-2026</em> <br>
+              
+                <span style="color:red;">₹1500</span>
+            </div>
+            <div class="transaction-card">
+                <span class="sp">Bus Ticket</span> 
+                <br>
+              
+                <em>20-01-2026</em> 
+                <br>
+               
+                <span style="color:red;">₹300</span>
+        
+            </div>
+            <div class="transaction-card">
+                <span class="sp">Movie Night</span>
+                 <br>
+                <em>27-01-2026</em> 
+                <br>
+                <span style="color:red;">₹800 </span>
+            </div>
+            </div>
+
+    </main>
+    
+</body>
+</html>
